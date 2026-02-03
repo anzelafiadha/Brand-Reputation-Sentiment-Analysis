@@ -27,6 +27,8 @@ This project was developed to automate brand monitoring for clients. The system 
   
 ## System Preview
 **[Click here](WALKTHROUGH.md)**
+**[Click here](https://www.linkedin.com/feed/update/urn:li:activity:7424373624968519680/)**
+
 
 ## Workflow System
 <img width="747" height="490" alt="image" src="https://github.com/user-attachments/assets/14465824-8ccd-4f8b-9f8a-838b0967567f" />
