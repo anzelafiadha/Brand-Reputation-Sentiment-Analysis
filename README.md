@@ -10,7 +10,7 @@ This project was developed to automate brand monitoring for clients. The system 
 
 ## Key Features
 * **Data Ingestion:** Uploads raw crawling data (CSV/XLSX) specifically structured for Twitter data.
-* **Indonesian NLP Pipeline:** Custom preprocessing handling slang ("bgt" -> "banget"), stopwords, and stemming (Sastrawi).
+* **Indonesian NLP Pipeline:** Custom preprocessing handling slang, stopwords, and stemming.
 * **Hybrid Labeling:** utilized **InSet Lexicon** for automated ground-truth labeling.
 * **Sentiment Classification:** Multinomial **Naïve Bayes** model with **TF-IDF** vectorization.
 * **Business Intelligence Dashboard:** A Streamlit interface visualizing:
