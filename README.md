@@ -26,8 +26,9 @@ This project was developed to automate brand monitoring for clients. The system 
 * **Database:** MySQL for archiving analysis history.
   
 ## System Preview
-**[Click here](WALKTHROUGH.md)**
-**[Click here](https://www.linkedin.com/feed/update/urn:li:activity:7424373624968519680/)**
+**[Click here (Photos)](WALKTHROUGH.md)**
+
+**[Click here (Video)](https://www.linkedin.com/feed/update/urn:li:activity:7424373624968519680/)**
 
 
 ## Workflow System
