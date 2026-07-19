@@ -24,6 +24,31 @@ This project was developed to automate brand monitoring for clients. The system 
 * **Machine Learning:** Scikit-learn (Naïve Bayes, TF-IDF)
 * **NLP Libraries:** NLTK, Sastrawi
 * **Database:** MySQL for archiving analysis history.
+
+## Xquik/TweetClaw Export Import
+
+Use `tools/tweetclaw_to_brand_dataset.py` to convert reviewed Xquik or
+TweetClaw CSV, JSON, and JSONL exports into the same column layout as
+`dataset/sentiment_brand_tuku_Q4_2025.csv`.
+
+```bash
+python3 tools/tweetclaw_to_brand_dataset.py tweetclaw-export.jsonl \
+  dataset/xquik_brand_import.csv --contains tuku
+```
+
+The converter maps common export fields such as `tweetText`, `reply_text`,
+`replyText`, `authorUsername`, `xUsername`, engagement counts, timestamps, and
+tweet URLs into the dataset schema so the existing Indonesian NLP and dashboard
+workflow can run on fresh X (Twitter) brand-monitoring data.
+
+The converter writes to `dataset/xquik_brand_import.csv` by default, preserving
+the repository's canonical Kopi Tuku dataset.
+
+Keep `conversation_id_str`, `id_str`, and `user_id_str` typed as text when
+editing the workbook. Spreadsheet numeric cells cannot preserve 19-digit post
+and account identifiers.
+
+Xquik is an independent third-party service. Not affiliated with X Corp.
   
 ## System Preview
 **[Click here (Photos)](WALKTHROUGH.md)**
@@ -33,4 +58,3 @@ This project was developed to automate brand monitoring for clients. The system 
 
 ## Workflow System
 <img width="747" height="490" alt="image" src="https://github.com/user-attachments/assets/14465824-8ccd-4f8b-9f8a-838b0967567f" />
-
